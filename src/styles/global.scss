@@ -1,0 +1,39 @@
+body{
+  background-color: #FBF6F0;
+}
+
+.button{
+  border: none;
+  color: white;
+  padding: 25px 46px;
+  box-shadow: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  transition: all .3s;
+  cursor: pointer;
+  &-blue{
+    background-color: $blue;
+    &:hover{
+      background-color: lighten($blue, 10%);
+    }
+  }
+  &:active{
+    border: note;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content{
+  width: calc(100% - 48px);
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
